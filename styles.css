@@ -170,7 +170,6 @@ p.annual {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
-    text-decoration: var(--bright-blue);
 }
 
 @media (max-width: 376px){
