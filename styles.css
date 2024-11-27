@@ -78,7 +78,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     
-    width: 26em;
+    width: 28em;
         
     background-color: hsl(0, 0%, 100%);
     border-radius: 1.5rem;
@@ -96,6 +96,7 @@ footer {
 }
 
 .promotion {
+    font-size: 1.25rem;
     line-height: 1.5rem;
 }
 
@@ -107,27 +108,28 @@ footer {
     background-color:var(--very-pale-blue);
     
     border-radius: 0.75rem;
-    margin: 1.5rem 0;
+    margin: 2.5rem 0;
 }
 
 .plan {
     display: grid;
     grid-template-columns: 1fr 2fr;
     place-items: center;
-    padding: 1em 0;
+    padding: 1.5em 0;
     justify-content: end;
-}
-
-p.annual {
-    margin-bottom: 0.3rem;
 }
 
 .plan img {
     margin-right: 0.45em;
+    width: 3.75rem;
 }
 
-.annual, .price {
-    font-size: 0.95rem;
+p.annual {
+    margin-bottom: 0.4rem;
+}
+
+.annual, .price, .change {
+    font-size: 1.1rem;
     margin: 0;
 }
 
@@ -147,10 +149,11 @@ p.annual {
 
 .proceed {
     box-shadow: 0px 15px 20px -5px hsla(245, 84%, 70%, 0.563);
+    margin-bottom: 0.4rem;
 }
 
 .proceed, .cancel-order {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .cancel-order:hover {
@@ -177,11 +180,15 @@ p.annual {
         background-color: var(--pale-blue);
     }
     .card {
-        max-width: 20em;
+        max-width: 22em;
+    }
+
+    .promotion {
+        font-size: 1.1rem;
     }
 
     .annual, .price, .change {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .plan img {
