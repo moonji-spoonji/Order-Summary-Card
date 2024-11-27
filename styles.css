@@ -1,0 +1,190 @@
+/* Font Family: Red Hat Display with weights: 500, 700, and 900 */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    /* PRIMARY */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    
+    /* NEUTRAL */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100svh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+    font-family: "Red Hat Display", sans-serif;
+
+    background: url("images/pattern-background-desktop.svg") no-repeat;
+    background-color: var(--pale-blue);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h1, .annual {
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+
+button {
+    color: var(--very-pale-blue);
+    background-color: var(--bright-blue);
+
+    border: none;
+    border-radius: 0.75rem;
+    width: 100%;
+    padding: 1rem;
+
+    font-weight: 900;
+}
+
+button:hover{
+    background-color: hsl(245, 84%, 70%);
+}
+
+/* keeping footer at the bottom */
+footer {
+    position: absolute;
+    bottom: 1em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 26em;
+        
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1.5rem;
+    box-shadow: -5px 10px 50px -25px hsl(245, 84%, 70%);
+}
+
+.hero {
+    border-radius: 20px 20px 0 0;
+}
+
+.bottom-half {
+    padding: 20px 30px;
+    
+    text-align: center;
+}
+
+.promotion {
+    line-height: 1.5rem;
+}
+
+.ad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color:var(--very-pale-blue);
+    
+    border-radius: 0.75rem;
+    margin: 1.5rem 0;
+}
+
+.plan {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+    padding: 1em 0;
+    justify-content: end;
+}
+
+p.annual {
+    margin-bottom: 0.3rem;
+}
+
+.plan img {
+    margin-right: 0.45em;
+}
+
+.annual, .price {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.plan, .change{
+    margin: 0 20px;
+}
+
+.change:hover {
+    color: hsl(245, 84%, 70%);
+    text-decoration: none;
+}
+
+.change, .cancel-order {
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.proceed {
+    box-shadow: 0px 15px 20px -5px hsla(245, 84%, 70%, 0.563);
+}
+
+.proceed, .cancel-order {
+    font-size: 0.9rem;
+}
+
+.cancel-order:hover {
+    color: var(--dark-blue);
+}
+
+.cancel-order, .attribution {
+    margin-top: 25px;
+}
+
+.attribution { 
+    font-size: 1rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: var(--bright-blue);
+}
+
+@media (max-width: 376px){
+    body {
+        background: url("images/pattern-background-mobile.svg") no-repeat;
+        background-color: var(--pale-blue);
+    }
+    .card {
+        max-width: 20em;
+    }
+
+    .annual, .price, .change {
+        font-size: 0.8rem;
+    }
+
+    .plan img {
+        width: 2.5rem;
+    }
+}
